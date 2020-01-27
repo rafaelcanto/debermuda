@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>De Bermuda</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/chart.js/dist/Chart.js"> </script>
+    <link rel="stylesheet" href="animation.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="text-center">
+    <div class="col-8 mx-auto align-middle mt-5">
+        <div class="mx-auto mt-4">
+            <img src="shorts_icon.svg" alt="logo de bermuda yeyeh" class="w-25 logo">
+            <h1>De Bermuda</h1>
+            <p>Você pode trabalhar de bermuda?</p>
+
+            <button type="button" class="btn btn-primary my-2 ml-2" onclick="vote(true)">Sim, é muito bom.</button>
+            <button type="button" class="btn btn-danger my-2 ml-2" onclick="vote(false)">Não, infelizmente.</button>
+        </div>
+
+        <div id="results" style="display: none;" class="my-4 h-50 w-50 mx-auto">
+            <h4>Resultados</h4>
+
+            <p id="message"></p>
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+
+    
+    <script type="text/javascript"> var appInsights = window.appInsights || function (a) { function b(a) { c[a] = function () { var b = arguments; c.queue.push(function () { c[a].apply(c, b) }) } } var c = { config: a }, d = document, e = window; setTimeout(function () { var b = d.createElement("script"); b.src = a.url || "https://az416426.vo.msecnd.net/scripts/a/ai.0.js", d.getElementsByTagName("script")[0].parentNode.appendChild(b) }); try { c.cookie = d.cookie } catch (a) { } c.queue = []; for (var f = ["Event", "Exception", "Metric", "PageView", "Trace", "Dependency"]; f.length;)b("track" + f.pop()); if (b("setAuthenticatedUserContext"), b("clearAuthenticatedUserContext"), b("startTrackEvent"), b("stopTrackEvent"), b("startTrackPage"), b("stopTrackPage"), b("flush"), !a.disableExceptionTracking) { f = "onerror", b("_" + f); var g = e[f]; e[f] = function (a, b, d, e, h) { var i = g && g(a, b, d, e, h); return !0 !== i && c["_" + f](a, b, d, e, h), i } } return c }({ instrumentationKey: "17982324-5097-4704-8b18-bd74403b6a15" }); window.appInsights = appInsights, appInsights.queue && 0 === appInsights.queue.length && appInsights.trackPageView(); </script>
+</body>
+
+</html>
